@@ -1,0 +1,25 @@
+<!-- Simple-Jekyll-Search https://github.com/christian-fei/Simple-Jekyll-Search -->
+<div class="input-group mt-5 px-3">
+  <input id="password-input" type="password" class="form-control search-box" placeholder="Enter password..">
+  <div class="input-group-append">
+    <button class="btn btn-primary text-white" onclick="checkPassword()">
+      <i class="fas fa-lock"></i>
+    </button>
+  </div>
+</div>
+<p class="px-3 mt-2 text-danger" id="error-message" style="display: none;">Incorrect password</p>
+
+
+<script>
+  function checkPassword() {
+    const input = document.getElementById('password-input').value;
+    const correctPassword = 'mySecret123'; // Change this to your desired password
+    const errorMessage = document.getElementById('error-message');
+
+    if (input === correctPassword) {
+      window.location.href = '/loop01'; // Redirect on success
+    } else {
+      errorMessage.style.display = 'block'; // Show error message
+    }
+  }
+</script>

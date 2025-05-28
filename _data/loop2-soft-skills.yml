@@ -1,0 +1,25 @@
+- name: Problem Solving
+  percentage: 80
+  color: info
+
+- name: Collaboration
+  percentage: 80
+  color: info
+
+- name: Communication
+  percentage: 70
+  color: success
+
+
+- name: Agility
+  percentage: 70
+  color: info
+
+- name: Curiosity
+  percentage: 70
+  color: success
+
+- name: Public Speaking
+  percentage: 30
+  color: info
+

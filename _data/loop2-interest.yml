@@ -1,0 +1,24 @@
+- name: VR
+  percentage: 90
+  color: success
+
+- name: Technology
+  percentage: 90
+  color:
+
+- name: Sports
+  percentage: 80
+  color: secondary
+
+- name: Culture
+  percentage: 70
+  color: info
+
+- name: music
+  percentage: 70
+  color: info
+
+- name: Games
+  percentage: 70
+  color: info
+

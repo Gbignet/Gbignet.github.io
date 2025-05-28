@@ -1,0 +1,20 @@
+- name: Adobe Photoshop
+  percentage: 80
+  color: info
+
+- name: ITK/VTK
+  percentage: 70
+  color: success
+
+- name: scikit-learn 
+  percentage: 80
+  color: dark
+
+- name: Unreal Engine
+  percentage: 30
+  color: dark
+
+- name: Unity
+  percentage: 70
+  color: dark
+

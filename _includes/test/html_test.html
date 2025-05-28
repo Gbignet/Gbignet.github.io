@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Custom Navbar</title>
+        <style>
+            /* Navbar Container */
+            .navbar {
+                display: flex;
+                padding: 10px;
+                border-radius: 40px;
+            }
+    
+            /* Navbar Links */
+            .navbar a {
+                text-decoration: none;
+                color: #000000;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 10px 20px;
+                border-radius: 20px;
+                transition: 0.3s ease-in-out;
+            }
+    
+            /* Active Link */
+            .navbar a.active {
+                color: #fff;
+                box-shadow: inset 0 0 10px rgba(0, 170, 255, 0.5);
+            }
+    
+            /* Hover Effect */
+            .navbar a:hover {
+                color: #1900ff;
+            }
+    
+                #password-container {
+                    position: fixed;
+                    bottom: 60px; /* moved up from 40px */
+                    left: 50%;
+                    transform: translateX(-50%);
+                    display: flex;
+                    gap: 10px;
+                    padding: 10px;
+                    border-radius: 10px;
+    
+                    /* Add this to remove any default border */
+                    border: none;
+                    box-shadow: none;
+            }
+    
+            #password-input {
+                padding: 8px 12px;
+                border: 1px solid rgba(0, 0, 0, 0.7); /* softer border */
+                background-color: rgba(255, 255, 255, 0.7); /* semi-transparent */
+                color: #ff0000;
+                border-radius: 8px;
+            }
+    
+            button {
+                padding: 8px 12px;
+                border: none;
+                background-color: #ffffff;
+                color: rgba(17, 29, 192, 0.575);
+                border-radius: 8px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+    
+            button:hover {
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+            #success-message {
+            position: fixed;
+            bottom: 120px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #00ffcc;
+            font-size: 14px;
+            opacity: 1.00; /* barely visible */
+            pointer-events: none;
+            user-select: none;
+            display: none; /* hidden by default */
+    }
+        </style>
+    </head>
+    <body>
+
+        <div id="password-container">
+            <input type="password" id="password-input" placeholder="WOOPS just decoys this way." />
+            <button onclick="checkPassword()"></button>
+            <p id="error-message" style="color: red; display: none;">Theres nothing on this floor</p>
+          </div>
+        <script>
+            function checkPassword() {
+              const password = document.getElementById('password-input').value;
+              const errorMsg = document.getElementById('error-message');
+              const successMsg = document.getElementById('success-message');
+              if (password === 'p') {
+                // Redirect to your protected page
+                successMsg.style.display = 'block';
+                window.location.href = '#/loop1 finished...';
+    
+    
+              } else {
+                errorMsg.style.display = 'block';
+              }
+            }
+          </script>
+          <p id="success-message">Onto /loop2</p>
+    
+    
+    </body>
+    
+    
+    
+    </html>

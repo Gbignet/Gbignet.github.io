@@ -1,0 +1,29 @@
+- title: Graduate, Epita, Paris
+  country: France
+  from: 2021
+  to: 2024
+  description: |
+              Master's degree in computer engineering with a concentration in image processing and synthesis.
+              Courses I was good at :  image ML, C, assembly, medical imagerie, computer vision 
+              Tech used:  Vscode, VTK/ITK, Unity, OPENCV... 
+
+- title: Study Abroad, Konkuk University, Seoul
+  country: South Korea
+  from: Aug. 2023
+  to: Dec. 2023
+  description: |
+              Created a 2-minute long 360 VR video, “A Trip to Seoul”, using 20 images and over 100 keyframes.  
+              Designed a ready-to-play VR rhythm game. Includes note generation that scales to the beat of the music and has difficulty sliders. 
+               -> Required 1,200 lines of code and 30+ hours. Won kudos. Game was selected for the Konkuk Arts and Culture Exhibition.
+               todo: actually show the stuff I made...  
+
+- title: Summer School, Culver Academy , Indiana
+  country: US
+  from: 2019
+  to:  2010
+  description: |
+              Attended a rigorous 10-year military summer program focused on leadership development, discipline, and teamwork.
+              Developed strong leadership skills through participation in multiple leadership roles and military-style training exercises.
+              Participated in naval school training for 3 years, gaining foundational knowledge of naval operations and protocols.
+              Member of the marching band for 2 years, performing with various percussion instruments, demonstrating teamwork and dedication.
+              Engaged in diverse extracurriculars including choir (5 years), SAT math prep, talent shows, parades, and unique experiences such as flying a Cessna and water skiing.

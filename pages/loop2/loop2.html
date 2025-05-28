@@ -1,0 +1,79 @@
+---
+layout: default
+title: loop2
+weight: 2
+permalink: /loop2/
+---
+
+{% include landing.html %}
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const currentPath = window.location.pathname;
+  
+      // Check if we're inside /loop2 or a subpath like /loop2/blog
+      if (currentPath.startsWith('/loop2')) {
+        // Find the Blog link
+        const navLinks = document.querySelectorAll('.navbar a');
+  
+        //keyword lst
+        const keywordsToRewrite = ['blog', 'about','test']; 
+
+        navLinks.forEach(link => {
+            const linkText = link.textContent.trim().toLowerCase();
+          if (keywordsToRewrite.includes(linkText)) {
+            link.href = `/loop2/${linkText}`;
+        }
+        if (link.textContent.trim().toLowerCase() === "about") {
+
+            link.setAttribute("id", "drip-source");
+
+            spawnDrip(link)
+        }
+        });
+      }
+    });
+
+    function spawnDrip(target) {
+    const drip = document.createElement("span");
+    drip.classList.add("blood-drip");
+    target.appendChild(drip);
+    setTimeout(() => drip.remove(), 1500);
+  }
+  </script>
+  <style>
+    #drip-source {
+      position: relative;
+    }
+  
+    .blood-drip {
+      width: 8px;
+      height: 8px;
+      background: red;
+      border-radius: 50%;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.5;
+      animation: drip 0.5s ease-in-out forwards;
+      pointer-events: none;
+    }
+  
+    @keyframes drip {
+      0% {
+        top: 100%;
+        opacity: 1;
+        transform: translateX(-50%) scaleY(1);
+      }
+      50% {
+        top: 140%;
+        transform: translateX(-50%) scaleY(1.4);
+      }
+      100% {
+        top: 180%;
+        opacity: 0;
+        transform: translateX(-50%) scaleY(0.3);
+      }
+    }
+  </style>

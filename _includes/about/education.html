@@ -1,0 +1,15 @@
+<div class="col mt-4" style="font-size: 20px; line-height: 1.6">
+  <div class="timeline-body bg-themed">
+    {% for item in site.data.education %}
+      <div class="timeline-item">
+        <div class="content">
+          <h2>{{ item.title }}, 
+            <span style="font-weight: bold; font-size: 110%;">{{ item.country }}</span>
+          </h2>
+          <h6 class="date">{{ item.from }} — {{ item.to }}</h6>
+          <div style="white-space: pre-line;">{{ item.description }}</div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

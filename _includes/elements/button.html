@@ -1,0 +1,41 @@
+<button class="dynamic-btn"
+    data-link="{{include.link}}"
+    style="padding: 15px 30px; font-size: 18px; font-weight: bold; border: none; cursor: pointer; border-radius: 10px; transition: opacity 0.3s ease-in-out, transform 0.2s; background-color: {{ include.color | default: 'rgb(255, 255, 255)' }}; color: white; opacity: 0;">
+  {{ include.text | default: 'Click Me' }}
+</button>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+      const buttons = document.querySelectorAll(".dynamic-btn");
+
+      // Set initial opacity to 0 for all buttons
+      buttons.forEach(button => {
+          button.style.opacity = "0";
+
+           // Click event uses data-link
+          button.addEventListener("click", () => {
+              const link = button.getAttribute("data-link");
+              if (link) {
+                  window.location.href = link;
+              }
+          });
+      });
+
+
+      document.addEventListener("mousemove", (event) => {
+          buttons.forEach(button => {
+              const rect = button.getBoundingClientRect();
+              const centerX = rect.left + rect.width / 2;
+              const centerY = rect.top + rect.height / 2;
+              const distX = Math.abs(event.clientX - centerX);
+              const distY = Math.abs(event.clientY - centerY);
+              const maxDist = Math.max(window.innerWidth, window.innerHeight);
+              
+              const intensity = 1 - Math.min(1, (distX + distY) / (maxDist * 0.1));
+              button.style.opacity = intensity;
+          });
+      });
+
+
+  });
+</script>

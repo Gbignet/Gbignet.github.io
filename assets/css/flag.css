@@ -1,0 +1,7 @@
+.flag-icon {
+  display: inline-block;   /* Prevents line breaks */
+  width: 1.2em;            /* Adjust size like an emoji */
+  height: 1em;
+  vertical-align: middle;  /* Aligns with text baseline */
+  margin: 0 2px;           /* Spacing between flags/text */
+}

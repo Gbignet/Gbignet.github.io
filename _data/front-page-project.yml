@@ -1,0 +1,12 @@
+
+- name: Detection of a chicken Embryo Heartrate
+  url: https://github.com/Gbignet/Embryo-heartrate-estimation
+  img: /assets/images/chicken_egg.jpg
+  desc: A responsive portfolio site built using Jekyll and Bootstrap.
+  tools: [TIFO, Python, Open-CV]
+
+- name: Cool VR Project (coming soon!)
+  url: https://github.com/Gbignet/its_coming_soon_dont_worry
+  img: /assets/images/dragon_project.png
+  desc: A VR experience built with Unity and C# that lets users cut through notes with an adaptative rythme (inspired by beat saber)
+  tools: [Unity, C#, VR]
