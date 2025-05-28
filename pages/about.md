@@ -17,8 +17,8 @@ weight: 3
   <p style="color: green;">#</p>
 {% endif %}
 
-<img src="/assets/images/fr.svg" class="flag-icon" alt="France Flag"> 
-<img src="/assets/images/us.svg" class="flag-icon" alt="US Flag">
+<img src="/assets/Images/fr.svg" class="flag-icon" alt="France Flag"> 
+<img src="/assets/Images/us.svg" class="flag-icon" alt="US Flag">
 </p>
 
 <p>I am a <span style="font-font-weight: bold; font-weight: 700;"> Franco-American </span>  dual citizen open to work opportunities in both the USA and the European Union.</p>

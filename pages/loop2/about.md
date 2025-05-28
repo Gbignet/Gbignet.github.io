@@ -22,7 +22,7 @@ Howdy, That's me <strong>{{ site.author.name }}</strong> :wave:,<br>
 
 
 
-<img src="/assets/images/fr.svg" class="flag-icon" alt="France Flag"> <img src="/assets/images/us.svg" class="flag-icon" alt="US Flag">
+<img src="/assets/Images/fr.svg" class="flag-icon" alt="France Flag"> <img src="/assets/Images/us.svg" class="flag-icon" alt="US Flag">
 <p>I am a <span style="font-font-weight: bold; font-weight: 700;"> Franco-American </span> double nationality open to work opportunities in both the USA and the European Union. </p>
 
 <p>I recently graduated from <span style="font-font-weight: bold; font-weight: 700;">EPITA School of Engineering and Computer Science </span> with a concentration in Image processing and synthesis.</p>

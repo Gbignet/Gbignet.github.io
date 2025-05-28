@@ -20,7 +20,7 @@ Howdy, That's me **{{ site.author.name }}** :wave:,<br>
 {% endif %}
 
 
-<img src="/assets/images/fr.svg" class="flag-icon" alt="France Flag"> <img src="/assets/images/us.svg" class="flag-icon" alt="US Flag">
+<img src="/assets/Images/fr.svg" class="flag-icon" alt="France Flag"> <img src="/assets/Images/us.svg" class="flag-icon" alt="US Flag">
 I am a franco-american double nationality job candidate   open to work in the USA and the European Union. 
 I recently graduated at  EPITA School of Engineering and Computer Science with a concentration in Image processing and synthesis.
 I have experience thanks to an internship as a full-stack developper at a startup and another as a data scientist in a private bank
