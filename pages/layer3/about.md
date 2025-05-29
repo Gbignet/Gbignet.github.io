@@ -12,12 +12,14 @@ weight: 3
 Howdy, That's me **{{ site.author.name }}** :wave:,<br>
 
 
+
 {% if debug == true %}
-  <p style="color: red;">#</p>
+  <p style="color: red;">[DEBUG MODE ENABLED]</p>
 
 {% else %}
-  <p style="color: red;">#</p>
+  <p style="color: green;">%</p>
 {% endif %}
+
 
 
 <img src="/assets/Images/fr.svg" class="flag-icon" alt="France Flag"> <img src="/assets/Images/us.svg" class="flag-icon" alt="US Flag">
@@ -32,7 +34,7 @@ My hobbies includes running, Racket Sports, chess, puzzles, games and Asian Cult
 Fun fact: I make good salad dressing
 
 <p style="opacity: 0.05; transition: opacity 0.3s;" onmouseover="this.style.opacity='0'" onmouseout="this.textContent = ''">
-If I where to be a food, I would be an onion</p>
+No more layers can be found for now... its a work in progress ^^</p>
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}

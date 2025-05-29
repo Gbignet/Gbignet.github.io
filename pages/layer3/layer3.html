@@ -13,7 +13,7 @@ permalink: /layer3/
       const currentPath = window.location.pathname;
       const layer_lv = "layer3"
   
-      // Check if we're inside /loop2 or a subpath like /loop2/blog
+      // Check if we're inside /layer3 or a subpath like /loop2/blog
       if (currentPath.startsWith(`/${layer_lv}`)) {
         // Find the Blog link
         const navLinks = document.querySelectorAll('.navbar a');
@@ -26,7 +26,7 @@ permalink: /layer3/
           if (keywordsToRewrite.includes(linkText)) {
             link.href = `/${layer_lv}/${linkText}`;
         }
-        if (link.textContent.trim().toLowerCase() === "about") {
+        if (link.textContent.trim().toLowerCase() === "blog") {
 
             link.setAttribute("id", "drip-source");
             spawnDrip(link)

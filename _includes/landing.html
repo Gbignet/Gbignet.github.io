@@ -62,13 +62,14 @@
   const path = window.location.pathname;
 
   // Match something like /loop2 or /loop10
-  const match = path.match(/loop(\d+)/);
+  const match = path.match(/[a-zA-Z]+(\d+)/);
 
   // If there's a match, use the number to set the image
   if (match) {
     const number = match[1]; // "2", "10", etc.
     const img = document.getElementById("profile-image");
     img.src = `/assets/Images/me${number}.png`;
+
   }
 
 
