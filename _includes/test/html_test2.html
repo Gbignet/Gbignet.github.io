@@ -96,7 +96,7 @@
     </div>
 
 
-
+    <!-- Caution!! the developer tool is not needed for this. -->
     <div id="password-container">
         <input type="password" id="password-input" placeholder="" />
         <button onclick="checkPassword()">Submit</button>
@@ -107,7 +107,7 @@
           const password = document.getElementById('password-input').value;
           const errorMsg = document.getElementById('error-message');
           const successMsg = document.getElementById('success-message');
-          if (password === 'p') {
+          if (password === 'shadow') {
             // Redirect to your protected page
             successMsg.style.display = 'block';
             window.location.href = '#/loop1 finished...';
